@@ -3,6 +3,7 @@ import { Formik } from "formik";
 
 // Components =======================
 import FormFormik from '../../components/Form/FormFormik';
+import UserValidation from '../../components/UserValidation/UserValidation';
 
 const FormikExample = () => {
     return(
@@ -20,8 +21,9 @@ const FormikExample = () => {
                     birthDate: "",
                     age: "",
                 }}
+                validationSchema={UserValidation}
                 onSubmit={(fields) => {
-                console.log(fields);
+                    alert('You are logged in')
                 }}
             >
                 <FormFormik />
