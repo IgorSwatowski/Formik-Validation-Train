@@ -1,12 +1,12 @@
 import React from 'react';
 
 // Views
-import Form from '../views/Formik/Form';
+import FormikExample from './Formik/FormikExample';
 
 function Root() {
   return (
     <div className="App">
-        <Form />
+        <FormikExample />
     </div>
   );
 }
