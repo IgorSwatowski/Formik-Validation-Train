@@ -5,12 +5,24 @@ import { Formik } from "formik";
 import FormFormik from '../../components/Form/FormFormik';
 import UserValidation from '../../components/UserValidation/UserValidation';
 
+// Styles ============================
+import { 
+    TitleSection, 
+    MainTitle, 
+    BlueTitle, 
+    TriangleTopRight,
+    TriangleBottomLeft 
+} from './formStyles';
+
 const FormikExample = () => {
     return(
-        <>
-            <h1>
-                Formik Validation Train
-            </h1>
+        <>  
+            <TriangleTopRight />
+            <TitleSection>
+                <MainTitle>
+                    Formik <br/>Validation <BlueTitle>Train</BlueTitle>
+                </MainTitle>
+            </TitleSection>
 
             <Formik
                 initialValues={{
@@ -28,7 +40,7 @@ const FormikExample = () => {
             >
                 <FormFormik />
             </Formik>
-
+            <TriangleBottomLeft />
         </>
     )
 }
