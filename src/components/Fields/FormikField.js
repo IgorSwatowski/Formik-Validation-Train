@@ -1,5 +1,7 @@
 import React from 'react';
-import { Field } from "formik";
+
+
+import { StyledField } from './formikFieldStyles';
 
 
 const FormikField = (props) => {
@@ -7,7 +9,7 @@ const FormikField = (props) => {
     const placeholder = props.placeholder || ""
 
     return(
-        <Field 
+        <StyledField 
             name={name} 
             type="text" 
             placeholder={placeholder}

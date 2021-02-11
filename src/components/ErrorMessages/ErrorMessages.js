@@ -1,5 +1,7 @@
 import React from 'react';
-import { ErrorMessage } from "formik";
+
+// Components =======================
+import { StyledErrorMessage } from './errorMessagesStyles';
 
 const FormikErrorMessage = (props) => {
     const name = props.name || "";
@@ -8,7 +10,7 @@ const FormikErrorMessage = (props) => {
     const fontWeight = props.fontWeight || "";
 
     return(
-        <ErrorMessage
+        <StyledErrorMessage
             name={name}
             component="div"
             className={nameOfClass}

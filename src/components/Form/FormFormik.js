@@ -1,14 +1,14 @@
 import React from 'react';
-import { Form } from "formik";
 
 // Components =======================
 import FormikField from '../../components/Fields/FormikField';
 import FormikErrorMessage from '../../components/ErrorMessages/ErrorMessages';
+import { StyledForm, StyledButton } from './formFormikStyles';
 
 const FormFormik = () =>{
 
     return(
-        <Form style={{ display: "flex", flexDirection: "column" }}>
+        <StyledForm>
             <FormikField 
                 name="firstName"
                 placeholder="First Name"
@@ -69,8 +69,8 @@ const FormFormik = () =>{
                 color="red"
                 fontWeight="bold"
             />
-            <button type="submit">Submit</button>
-        </Form>
+            <StyledButton type="submit">Submit</StyledButton>
+        </StyledForm>
     )
 }
 
